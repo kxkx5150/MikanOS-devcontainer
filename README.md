@@ -2,11 +2,13 @@
 
 vsocde devcontainer
 
-<br><br>
+<br><br><br><br>
 
 
+## [Webで開発 Codespaces版はこちら](https://github.com/kxkx5150/MikanOS-Codespaces)
 
-<br><br>
+<br><br><br><br>
+
 
 深い理解の為には買いましょう。  
 
@@ -69,6 +71,12 @@ make
 カーネル
 ```shell
 make kernel
+```
+
+
+app
+```shell
+make app
 ```
 
 
