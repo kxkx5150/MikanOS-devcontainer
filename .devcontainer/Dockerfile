@@ -5,7 +5,6 @@ ARG USERNAME=vscode
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
     build-essential \
-    x11-xserver-utils \
     llvm-7-dev \
     lld-7 \
     clang-7 \
