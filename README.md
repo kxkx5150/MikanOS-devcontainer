@@ -18,6 +18,10 @@ vsocde devcontainer
 
 全日程のソース同梱
 
+![Screenshot from 2023-01-07 15-50-59](https://user-images.githubusercontent.com/10168979/211135361-58a5176e-a5fd-4eaf-bc4b-7f8b641d4d7c.png)
+
+
+
 ### ubuntu, windows 用です。  
 
 確認は ubuntu 22.04, windows 10 でしました。
