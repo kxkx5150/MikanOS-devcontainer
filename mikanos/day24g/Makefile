@@ -1,25 +1,28 @@
 
 .PHONY: all
 all:
-	../build.sh
+	../sh/buildall.sh
 
 
 .PHONY: kernel
 kernel:
-	../build.sh kernel
+	../sh/build.sh kernel
 
 
 .PHONY: run
 run:
-	../build.sh && ../run.sh
+	../sh/buildall.sh && ../sh/run.sh
+
 
 
 .PHONY: qemu
 qemu:
-	../run.sh
+	../sh/run.sh
 
 
 
 .PHONY: clean
 clean:
-	../build.sh clean
+	../sh/build.sh clean
+
+
