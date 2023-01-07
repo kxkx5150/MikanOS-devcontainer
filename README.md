@@ -16,6 +16,8 @@ vsocde devcontainer
 
 <br>
 
+全日程のソース同梱
+
 ### ubuntu, windows 用です。  
 
 確認は ubuntu 22.04, windows 10 でしました。
