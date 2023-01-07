@@ -1,8 +1,17 @@
-# MikanOS-devcontainer-Linux_Win
+# MikanOS-devcontainer-Codespaces
 
 vsocde devcontainer
 
-<br><br>
+<br><br><br><br>
+
+
+## [Webで開発 Codespaces版はこちら](https://github.com/kxkx5150/MikanOS-devcontainer-Codespaces/tree/novnc)
+
+## [Ubuntu 20.04版はこちら](https://github.com/kxkx5150/MikanOS-devcontainer-Codespaces/tree/master)
+
+
+<br><br><br><br>
+
 
 深い理解の為には買いましょう。  
 
