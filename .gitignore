@@ -1,0 +1,7 @@
+*.o
+.*.d
+disk.img
+kernel.elf
+mnt/
+henkaku.bin
+

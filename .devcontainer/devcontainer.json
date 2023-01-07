@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "Mikan OS Dockerfile",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"workspaceMount": "source=${localWorkspaceFolder}/,target=/home/vscode/workspace,type=bind",
+	"workspaceFolder": "/home/vscode/workspace", 
+	"extensions": [
+		"ms-vscode.cpptools",
+		"ms-vscode.cpptools-extension-pack",
+		"vadimcn.vscode-lldb"
+	],
+	"postAttachCommand": "cp $HOME/workspace/.devcontainer/target.txt $HOME/edk2/Conf/",
+	"remoteUser": "vscode",
+	"runArgs": [
+		"--privileged",
+		"--disable-content-trust=true",
+		"-e",
+		"PULSE_SERVER=/mnt/wslg/PulseServer",
+		"-e",
+		"WAYLAND_DISPLAY=wayland-0",
+		"-e",
+		"XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir",
+		"-v",
+		"/mnt/wslg:/mnt/wslg",
+        "--net",
+		"host", 
+        "-e", 
+		"DISPLAY=:0",
+		"-v",
+		"/tmp/.X11-unix:/tmp/.X11-unix"
+	]
+}
