@@ -68,6 +68,12 @@ make kernel
 ```
 
 
+app
+```shell
+make app
+```
+
+
 掃除
 ```shell
 make clean
