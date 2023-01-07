@@ -6,7 +6,7 @@ all:
 
 .PHONY: kernel
 kernel:
-	../sh/build.sh kernel
+	../sh/build_kernel.sh
 
 
 .PHONY: run
@@ -23,6 +23,6 @@ qemu:
 
 .PHONY: clean
 clean:
-	../sh/build.sh clean
+	../sh/clean.sh
 
 
