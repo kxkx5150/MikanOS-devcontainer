@@ -2,7 +2,7 @@ TARGET = kernel.elf
 OBJS = main.o
 
 CXXFLAGS += -fshort-wchar -O2 --target=x86_64-elf -fno-exceptions -ffreestanding 
-LDFLAGS  += --entry KernelMain -z norelro --image-base 0x100000 --static
+LDFLAGS += -z separate-code --entry KernelMain -z norelro --image-base 0x100000 --static
 
 
 .PHONY: all
