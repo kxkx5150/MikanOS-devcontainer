@@ -1,7 +1,7 @@
 TARGET = kernel.elf
 OBJS = main.o
 
-CXXFLAGS += -O2 --target=x86_64-elf -fno-exceptions -ffreestanding 
+CXXFLAGS += -fshort-wchar -O2 --target=x86_64-elf -fno-exceptions -ffreestanding 
 LDFLAGS  += --entry KernelMain -z norelro --image-base 0x100000 --static
 
 

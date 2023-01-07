@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-20.04
+FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04
 
 ARG USERNAME=vscode
 
@@ -6,9 +6,9 @@ RUN apt-get update \
  && apt-get install -y --no-install-recommends \
     build-essential \
     x11-xserver-utils \
-    llvm-7-dev \
-    lld-7 \
-    clang-7 \
+    llvm-14-dev \
+    lld-14 \
+    clang-14 \
     nasm \
     acpica-tools \
     uuid-dev \
@@ -79,14 +79,14 @@ RUN for item in \
         clang++ \
         clang-cpp \
     ; do \
-        update-alternatives --install "/usr/bin/${item}" "${item}" "/usr/bin/${item}-7" 50 \
+        update-alternatives --install "/usr/bin/${item}" "${item}" "/usr/bin/${item}-14" 50 \
     ; done
 
 USER ${USERNAME}
 WORKDIR /home/${USERNAME}
 
 RUN git clone --recursive https://github.com/tianocore/edk2.git edk2 \
- && (cd edk2 && git checkout --recurse-submodules edk2-stable202102) \
+ && (cd edk2 && git checkout --recurse-submodules edk2-stable202208) \
  && make -C edk2/BaseTools/Source/C
 
 ENV PATH="/home/${USERNAME}/osbook/devenv:${PATH}"
