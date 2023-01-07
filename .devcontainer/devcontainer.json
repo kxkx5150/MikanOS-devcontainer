@@ -28,7 +28,7 @@
         "--net",
 		"host", 
         "-e", 
-		"DISPLAY=:0",
+		"DISPLAY=${env:DISPLAY}",
 		"-v",
 		"/tmp/.X11-unix:/tmp/.X11-unix"
 	]

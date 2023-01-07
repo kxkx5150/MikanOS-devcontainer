@@ -102,4 +102,6 @@ USER root
 COPY ./.setdevenv /root
 RUN cat /root/.setdevenv >> /home/${USERNAME}/.bashrc
 
+ENV DISPLAY=host.docker.internal:0
+
 CMD ["/bin/sh", "-c", "echo Container started ; trap \"exit 0\" 15; while sleep 1 & wait $!; do :; done"]
