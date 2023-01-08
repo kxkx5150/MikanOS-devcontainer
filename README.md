@@ -46,6 +46,10 @@ vsocde devcontainer
 
 <br>
 
+*qemuの初回起動は時間がかかる場合があります。*
+
+<br>
+
 使っていて頻発するなら、ホストで下記を試して下さい。  
 windowsはWSL内  
 
@@ -54,12 +58,12 @@ windowsはWSL内
 sudo apt update
 sudo apt install x11-xserver-utils
 ```
-Xサーバへのアクセスの許可
+Xサーバへのローカルからのアクセスの許可
 ```shell
 xhost +local:
 ```
 
-**使い終わったら**
+**使い終わったら忘れずに**
 ```shell
 xhost -local:
 ```
