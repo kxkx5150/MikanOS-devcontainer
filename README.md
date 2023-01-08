@@ -1,6 +1,6 @@
 # MikanOS-devcontainer
 
-vsocde devcontainer
+vscode devcontainer
 
 <br><br><br><br>
 
