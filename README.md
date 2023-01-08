@@ -39,11 +39,34 @@ vsocde devcontainer
 
 **mac** は未対応ですので[こちら](https://github.com/sarisia/mikanos-devcontainer)
 
-<br><br>
-
-<br><br><br><br>
+<br><br><br><br><br><br>
 
 
+## QEMUでgtkエラー
+
+<br>
+
+使っていて頻発するなら、ホストで下記を試して下さい。  
+windowsはWSL内  
+
+まずインストール
+```shell
+sudo apt update
+sudo apt install x11-xserver-utils
+```
+Xサーバへのアクセスの許可
+```shell
+xhost +local:
+```
+
+**使い終わったら**
+```shell
+xhost -local:
+```
+
+
+
+<br><br><br><br><br><br>
 
 
 ## ビルド方法
